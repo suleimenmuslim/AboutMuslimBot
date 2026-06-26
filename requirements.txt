@@ -1,3 +1,2 @@
-pyTelegramBotAPI
-google-generativeai
-requests
+pyTelegramBotAPI 4.34.0
+google-genai 2.10.0
