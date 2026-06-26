@@ -3,14 +3,12 @@
 import telebot
 import re
 import sys
-import os
+from config2 import token_bot, Gemini_key
 from telebot import types
 from telebot.types import InputMediaPhoto, BotCommand
 from content import CONTENT, achievs , project_ratings
 from google import genai
 
-token_bot = os.getenv("TOKEN_BOT")
-Gemini_key = os.getenv("GEMINI_KEY")
 
 
     
@@ -397,7 +395,7 @@ def re_handler(message):
     elif re.search(r"ии|ai|gemini", text):
         bot.send_message(message.chat.id,"Нажмите кнопку 🤖ИИ для общения с искусственным интеллектом.")
     else:
-        bot.send_message(message.chat.id, "🤔 Я не понял запрос.\nИспользуйте лоступные кнопки меню, команды или нажмите 🤖ИИ для общения с ассистентом.", reply_markup=menu())
+        bot.send_message(message.chat.id, "🤔 Я не понял запрос.\nИспользуйте доступные кнопки меню, команды или нажмите 🤖ИИ для общения с ассистентом.", reply_markup=menu())
 
 
 
