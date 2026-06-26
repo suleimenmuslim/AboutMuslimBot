@@ -10,7 +10,7 @@ from content import CONTENT, achievs , project_ratings
 from google import genai
 
 token_bot = os.getenv("TOKEN_BOT")
-Gemini_key = os.getenv("GEMINI_key")
+Gemini_key = os.getenv("GEMINI_KEY")
 
 
     
